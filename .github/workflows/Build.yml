@@ -27,7 +27,7 @@ jobs:
           cd dist
           result=$(grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml)
           echo "result=$result"
-          echo "result=$result" >> $env:GITHUB_OUTPUT
+          echo "result=$result" >> $GITHUB_OUTPUT
       
       - name: Generate checksum
         uses: jmgilman/actions-generate-checksum@v1
