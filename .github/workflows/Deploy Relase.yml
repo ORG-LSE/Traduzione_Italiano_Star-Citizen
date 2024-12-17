@@ -39,7 +39,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.extract_version.outputs.result }}
-          prerelease: ${{ contains(steps.extract_version.outputs.result, '-beta') }}
+          prerelease: false
           draft: false
           body: 'Release'
           repository: 'ORG-LSE/Traduzione_Italiano_Star-Citizen'
