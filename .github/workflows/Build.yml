@@ -23,10 +23,10 @@ jobs:
         id: extract_version
         shell: bash
         run: |
-          ls
+          echo "Extracting version from manifest.xml"
           cd dist
           result=$(grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml)
-          echo "result=$result"
+          echo "Version: $result"
           echo "result=$result" >> $GITHUB_OUTPUT
       
       - name: Generate checksum
