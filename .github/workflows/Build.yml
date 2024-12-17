@@ -25,9 +25,9 @@ jobs:
         run: |
           ls
           cd dist
-          $version=$(grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml)
-          echo "version=$version" >> $env:GITHUB_OUTPUT
-          echo "Version = $version"
+          result=$(grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml)
+          echo "version=result" >> $env:GITHUB_OUTPUT
+          echo "Version = " + result
       
       - name: Create Tag
         uses: actions/github-script@v6
