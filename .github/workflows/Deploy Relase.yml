@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    name: Build the Inno Setup Installer
+    name: Deploy Relase
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository Source
