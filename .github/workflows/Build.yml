@@ -27,19 +27,23 @@ jobs:
           cd dist
           result=$(grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml)
           echo "result=$result"
-          echo "version=$result" >> $env:GITHUB_OUTPUT
+          echo "result=$result" >> $env:GITHUB_OUTPUT
       
       - name: Generate checksum
         uses: jmgilman/actions-generate-checksum@v1
         with:
           patterns: |
             dist/Setup Traslation Italian.exe
+
+      - name: version show
+        run: |
+          echo ${{ steps.extract_version.outputs.result }}
       
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ steps.extract_version.outputs.version }}
-          prerelease: ${{ contains(steps.extract_version.outputs.version, '-beta') }}
+          tag_name: v${{ steps.extract_version.outputs.result }}
+          prerelease: ${{ contains(steps.extract_version.outputs.result, '-beta') }}
           draft: false
           body: 'Release'
           repository: 'ORG-LSE/Traduzione_Italiano_Star-Citizen'
