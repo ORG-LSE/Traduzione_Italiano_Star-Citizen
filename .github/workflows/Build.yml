@@ -23,6 +23,7 @@ jobs:
         id: extract_version
         shell: bash
         run: |
+          ls
           cd dist
           $version = grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml
           echo "version=$version" >> $env:GITHUB_OUTPUT
