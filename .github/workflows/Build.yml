@@ -28,22 +28,11 @@ jobs:
           result=$(grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml)
           echo "result=$result"
           echo "version=$result" >> $env:GITHUB_OUTPUT
-
-      - name: Create Tag
-        uses: actions/github-script@v6
-        with:
-          script: |
-            github.rest.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: 'refs/tags/v${{ env.version }}',
-              sha: context.sha
-            })
       
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: $${{ env.version }}
+          tag_name: v${{ env.version }}
           prerelease: ${{ contains(env.version, '-beta') }}
           draft: false
           body: 'Release'
