@@ -29,6 +29,12 @@ jobs:
           echo "result=$result"
           echo "version=$result" >> $env:GITHUB_OUTPUT
       
+      - name: Generate checksum
+        uses: jmgilman/actions-generate-checksum@v1
+        with:
+          patterns: |
+            dist/Setup Traslation Italian.exe
+      
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
@@ -39,7 +45,7 @@ jobs:
           repository: 'ORG-LSE/Traduzione_Italiano_Star-Citizen'
           make_latest: true
           files: |
-            Setup Traslation Italian.exe
+            dist/Setup Traslation Italian.exe
             checksum.txt
             LICENSE
         
