@@ -25,7 +25,7 @@ jobs:
         run: |
           echo "Extracting version from manifest.xml"
           cd dist
-          result=$(grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml)
+          result=$(grep -oP '(?<=<ApplicantionVersion>).*(?=</ApplicantionVersion)' manifest.xml)
           echo "Version: $result"
           echo "result=$result" >> $GITHUB_OUTPUT
       
