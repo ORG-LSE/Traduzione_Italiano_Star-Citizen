@@ -34,10 +34,6 @@ jobs:
         with:
           patterns: |
             dist/Setup Traslation Italian.exe
-
-      - name: version show
-        run: |
-          echo ${{ steps.extract_version.outputs.result }}
       
       - name: Create Release
         uses: softprops/action-gh-release@v2
