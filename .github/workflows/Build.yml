@@ -1,0 +1,55 @@
+# This is a basic workflow to help you get started with Actions
+name: Deploy
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build the Inno Setup Installer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository Source
+        uses: actions/checkout@v4
+
+      - name: Extract Version
+        id: extract_version
+        shell: bash
+        run: |
+          cd dist
+          $version = grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml
+          echo "version=$version" >> $env:GITHUB_OUTPUT
+          echo "Version = $version"
+      
+      - name: Create Tag
+        uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/v${{ env.version }}',
+              sha: context.sha
+            })
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: $${{ env.version }}
+          prerelease: ${{ contains(env.version, '-beta') }}
+          draft: false
+          body: 'Release'
+          repository: 'ORG-LSE/Traduzione_Italiano_Star-Citizen'
+          make_latest: true
+          files: |
+            dist\Setup Traslation Italian.exe
+            checksum.txt
+            LICENSE
+        
