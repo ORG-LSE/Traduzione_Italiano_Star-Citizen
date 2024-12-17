@@ -25,7 +25,7 @@ jobs:
         run: |
           ls
           cd dist
-          $version = "`grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml`"
+          $version="`grep -oP '(?<=<Version>).*(?=</Version)' manifest.xml`"
           echo "version=$version" >> $env:GITHUB_OUTPUT
           echo "Version = $version"
       
