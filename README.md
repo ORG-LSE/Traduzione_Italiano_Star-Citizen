@@ -1,3 +1,5 @@
+![Static Badge](https://img.shields.io/badge/language-it-blue) ![GitHub License](https://img.shields.io/github/license/ORG-LSE/Traduzione_Italiano_Star-Citizen) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ORG-LSE/Traduzione_Italiano_Star-Citizen/Deploy%20Relase.yml) ![GitHub Release](https://img.shields.io/github/v/release/ORG-LSE/Traduzione_Italiano_Star-Citizen)
+
 # Traduzione Italiano Star-Citizen
 
 ![LOGO](Risorsa_1.png)
@@ -27,7 +29,7 @@
 # Uninstalla
 
 **ATTENZIONE**: Se per installare si è usato il metodo **Setup** seguire solo il metodo **tramite Setup**.
-Perchè il Metodo **Manuale** non può disinstalare correttamente e pulire i registri di sistema. 
+Perchè il Metodo **Manuale** non può disinstalare correttamente e pulire i registri di sistema.
 
 #### Metodo tramite Setup
 
