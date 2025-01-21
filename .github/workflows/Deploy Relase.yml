@@ -34,6 +34,7 @@ jobs:
         with:
           patterns: |
             dist/Setup Traslation Italian.exe
+            dist/Manual Setup Traslation Italian.zip
       
       - name: Create Release
         uses: softprops/action-gh-release@v2
@@ -45,6 +46,7 @@ jobs:
           repository: 'ORG-LSE/Traduzione_Italiano_Star-Citizen'
           make_latest: true
           files: |
+            dist/Manual Setup Traslation Italian.zip
             dist/Setup Traslation Italian.exe
             checksum.txt
             LICENSE
