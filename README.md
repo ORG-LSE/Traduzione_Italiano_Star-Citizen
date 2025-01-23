@@ -12,7 +12,7 @@
 ## Indice
 - [Instalazione](#instalazione)
 - [Uninstalla](#uninstalla)
-- [Update](#update)
+- [Aggiorna](#aggiorna)
 
 <br>
 
@@ -63,7 +63,7 @@ Perchè il Metodo **Manuale** non può disinstalare correttamente e pulire i reg
 2. Aprire la cartella `data` cercare la cartella `Localization` aprila.
 3. Trovare la cartella `italian_(italy)` e eliminarla.
 
-# Update
+# Aggiorna
 
 #### Procedura
 
