@@ -1,8 +1,11 @@
-![Static Badge](https://img.shields.io/badge/language-it-blue) ![GitHub License](https://img.shields.io/github/license/ORG-LSE/Traduzione_Italiano_Star-Citizen) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/ORG-LSE/Traduzione_Italiano_Star-Citizen/Deploy%20Relase.yml) ![GitHub Release](https://img.shields.io/github/v/release/ORG-LSE/Traduzione_Italiano_Star-Citizen)
+![Static Badge](https://img.shields.io/badge/language-it-blue) ![GitHub License](https://img.shields.io/github/license/ORG-LSE/Traduzione_Italiano_Star-Citizen) ![GitHub Release](https://img.shields.io/github/v/release/ORG-LSE/Traduzione_Italiano_Star-Citizen)
 
 # Traduzione Italiano Star-Citizen
 
-![LOGO](Risorsa_1.png)
+<div style="display: flex; justify-content: center;">
+   <img src="image/README/Logo_LSE.png" width="200"/>
+   <img src="image/README/Logo_MadeByTheCommunity.png" width="200"/>
+</div>
 
 ## Questa è una traduzione pubblica fatta da Mr Revo per la ORG LSE
 
@@ -16,15 +19,23 @@
 2. Cliccare per eseguire installazione
    AVVISO: Windows potrebbe mostrare un messaggio che il file non è sicuro perchè non riesce a verificare la firma digitale **installer è sicuro**.
    Per ovviare al problema basta cliccare su `Ulteriori Informazioni` e poi su `Esegui Cominque`.
-   ![1737494930628](image/README/1737494930628.png) ![1737495126442](image/README/1737495126442.png)
-3. Proseguire seguendo la procedura guidata del setup.
+   
+   <img src="image/README/1737494930628.png" width="350"/>
+   <img src="image/README/1737495126442.png" width="350"/>
+   
+3. Accettare i termini
+4. Selezionare la versione di Star-Citizen LIVE o PTU
+5. Premere sul tasto **Installa traduzione**
+6. Aspettare che finisca il programma si chiude da solo al termine della operazione
 
 #### Instalazione Manuale
 
-1. Scaricare il File `Manual Setup Traslation Italian.zip` dal seguente [link](https://github.com/ORG-LSE/Traduzione_Italiano_Star-Citizen/releases/latest)
+1. Scaricare il File `global.ini` dal seguente [link](https://drive.google.com/uc?export=download&id=1nS6AvSXgctANr-enrFg5XkZVUdY4N5qH)
 2. Aprire la cartella di installazione di Star-Citizen es: `C:\Program Files\Roberts Space Industries\StarCitizen\LIVE`
 3. Aprire il file zip e trascinare la cartella `data` dentro la cartella installazione di Star-Citizen aperta in precedenza
-4. In stallzione completata
+4. Creare la sotto cartella `Localization` al suo interno una altra sotto cartella `italian_(italy)`
+5. Spostare il File `global.ini` precedente mente scaricato in questa cartella appena creata `italian_(italy)`
+6. In stallzione completata
 
 # Uninstalla
 
@@ -33,10 +44,11 @@ Perchè il Metodo **Manuale** non può disinstalare correttamente e pulire i reg
 
 #### Metodo tramite Setup
 
-1. Andare sullo start e aprire le impostazioni
-2. Aprire la pagina `APP` e andare nella sezione `App e Funzionalita`
-3. Cercare  `Traduzione in Italiano` clicare sopra per far spuntare il tasto Uninstalla
-4. Seguire la procedura guidata del Uninstaller
+1. Aprire installer `Setup Traslation Italian.exe`
+2. Accettare i termini
+3. Selezionare la versione di Star-Citizen LIVE o PTU
+4. Premere sul tasto **Rimuovi traduzione**
+5. Aspettare che finisca il programma si chiude da solo al termine della operazione
 
 #### Metodo Manuale
 
