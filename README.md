@@ -7,7 +7,14 @@
    <img src="image/README/Logo_MadeByTheCommunity.png" width="200"/>
 </div>
 
-## Questa è una traduzione pubblica fatta da Mr Revo per la ORG LSE
+### Questa è una traduzione pubblica fatta da Mr Revo per la ORG LSE
+
+## Indice
+- [Instalazione](#instalazione)
+- [Uninstalla](#uninstalla)
+- [Update](#update)
+
+<br>
 
 # Instalazione
 
@@ -57,6 +64,8 @@ Perchè il Metodo **Manuale** non può disinstalare correttamente e pulire i reg
 3. Trovare la cartella `italian_(italy)` e eliminarla.
 
 # Update
+
+#### Procedura
 
 1. Disinstallare seguendo i metodi di disistallazione alla sezione [Uninstalla](#uninstalla)
 2. Reinstallare seguendo i metodi di installazione alla sezione [Instalazione](#instalazione)
