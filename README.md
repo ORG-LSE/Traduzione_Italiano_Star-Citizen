@@ -22,7 +22,7 @@
    
    <img src="image/README/1737494930628.png" width="350"/>
    <img src="image/README/1737495126442.png" width="350"/>
-   
+
 3. Accettare i termini
 4. Selezionare la versione di Star-Citizen LIVE o PTU
 5. Premere sul tasto **Installa traduzione**
@@ -44,7 +44,7 @@ Perchè il Metodo **Manuale** non può disinstalare correttamente e pulire i reg
 
 #### Metodo tramite Setup
 
-1. Aprire installer `Setup Traslation Italian.exe`
+1. Aprire installer `Setup Traslation Italian.exe` in caso non lo si abbia scarica da qui [link](https://github.com/ORG-LSE/Traduzione_Italiano_Star-Citizen/releases/latest)
 2. Accettare i termini
 3. Selezionare la versione di Star-Citizen LIVE o PTU
 4. Premere sul tasto **Rimuovi traduzione**
@@ -55,3 +55,8 @@ Perchè il Metodo **Manuale** non può disinstalare correttamente e pulire i reg
 1. Aprire la cartella di installazione di Star-Citizen es: `C:\Program Files\Roberts Space Industries\StarCitizen\LIVE`
 2. Aprire la cartella `data` cercare la cartella `Localization` aprila.
 3. Trovare la cartella `italian_(italy)` e eliminarla.
+
+# Update
+
+1. Disinstallare seguendo i metodi di disistallazione alla sezione [Uninstalla](#uninstalla)
+2. Reinstallare seguendo i metodi di installazione alla sezione [Instalazione](#instalazione)
